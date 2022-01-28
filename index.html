@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Game Life</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="bg">
+            <canvas id="grid" width="1000" height="1000"></canvas>
+            <canvas id="game" width="1000" height="1000"></canvas>
+        </div>
+
+        <div class="info">
+            <div class="controls">
+                <button class="start-btn btn">Старт</button>
+                <button class="pause-btn btn" disabled>Пауза</button>
+                <button class="reset-btn btn">Очистить</button>
+            </div>
+
+            <p class="text">Количество итераций: <span class="generation">0</span></p>
+
+            <div class="alert hide"></div>
+        </div>
+    </div>
+
+
+    <script src="Grid.js"></script>
+    <script src="Game.js"></script>
+    <script src="Main.js"></script>
+</body>
+</html>

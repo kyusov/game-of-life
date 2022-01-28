@@ -1,0 +1,90 @@
+#grid {
+    position: absolute;
+    z-index: 0;
+}
+
+#game {
+    z-index: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    margin: 1rem;
+    display: flex;
+}
+
+.bg {
+    display: inline-flex;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    border: 2px solid #282828;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 0 1rem;
+}
+
+.btn {
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 5px;
+
+    font-size: 1.125rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: .5rem;
+
+    margin-left: 1rem;
+    transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+}
+
+.btn:disabled:hover {
+    cursor: not-allowed;
+    color: #ccc;
+    background-color: transparent;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #282828;
+    border-color: #282828;
+    color: #fefefe;
+}
+
+.btn:first-child {
+    margin-left: 0;
+}
+
+.text, .alert {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.125rem;
+    border: 2px solid #282828;
+    border-radius: 5px;
+}
+
+.text > span {
+    font-weight: 600;
+}
+
+.hide {
+    display: none;
+}
